@@ -58,3 +58,13 @@ tasks.register('check_test', Test) {
         includeTags("check_test")
     }
 }
+tasks.register('steam_test', Test) {
+    systemProperties(System.getProperties())
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+        exceptionFormat "full"
+    }
+    useJUnitPlatform {
+        includeTags("Steam")
+    }
+}

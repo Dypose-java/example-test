@@ -16,7 +16,7 @@ public class Main extends MainJenkinsProperty {
     final static String NAME_FILE="steam_latest.deb";
     final static String URL = "https://store.steampowered.com/";
 
-    @Epic("Selenoid")
+    @Epic("Steam")
     @Story("Установка")
     @Severity(SeverityLevel.BLOCKER)
     @Tag("BLOCKER")
@@ -31,7 +31,7 @@ public class Main extends MainJenkinsProperty {
                 .asserDownloadSteamFile(NAME_FILE);
     }
 
-    @Epic("Selenoid")
+    @Epic("Steam")
     @Feature("Параметризованный тест")
     @Story("Клик")
     @Severity(SeverityLevel.NORMAL)
@@ -47,7 +47,7 @@ public class Main extends MainJenkinsProperty {
                 .assertBaseTitleUrl()
                 .banerBaseUrlClickElement(baseBaner.getName());
     }
-    @Epic("Selenoid")
+    @Epic("Steam")
     @Feature("Параметризованный тест")
     @Story("Магазин")
     @Severity(SeverityLevel.NORMAL)
@@ -66,7 +66,7 @@ public class Main extends MainJenkinsProperty {
                 .clickElementPopUpWindowsBanerShop(value.getName());
     }
 
-    @Epic("Selenoid")
+    @Epic("Steam")
     @Feature("Параметризованный тест")
     @Story("Сообщество")
 
@@ -86,6 +86,7 @@ public class Main extends MainJenkinsProperty {
                 .clickElementPopUpWindowsBanerCommunity(value.getName());
     }
 
+    @Epic("Steam")
     @Owner("Dypose")
     @Stories({@Story("Поиск"),@Story("Покупка")})
     @Severity(SeverityLevel.BLOCKER)
