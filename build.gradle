@@ -49,6 +49,7 @@ test {
 }
 
 tasks.register('check_test', Test) {
+    systemProperties(System.getProperties())
     testLogging {
         events "passed", "skipped", "failed", "standardOut", "standardError"
         exceptionFormat "full"
