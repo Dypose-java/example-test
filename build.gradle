@@ -53,6 +53,6 @@ tasks.register('check_test', Test) {
         exceptionFormat "full"
     }
     useJUnitPlatform {
-        includeTags("console")
+        includeTags("check_test")
     }
 }
