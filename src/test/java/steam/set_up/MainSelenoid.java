@@ -1,4 +1,4 @@
-package steam;
+package steam.set_up;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
@@ -8,6 +8,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,12 +26,17 @@ public class MainSelenoid {
                 add("TZ=UTC");
             }});
             put("labels", new HashMap<String, Object>() {{
-                put("manual", "true");
+                put("enableVNC","true");
             }});
             put("enableVideo", true);
         }});
 
         Configuration.browserCapabilities =options;
+
+        /*DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("enableVNC", true);
+        capabilities.setCapability("enableVideo", true);
+        Configuration.browserCapabilities = capabilities;*/
     }
     @BeforeEach
     void allure(){
