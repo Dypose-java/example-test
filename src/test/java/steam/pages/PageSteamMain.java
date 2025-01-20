@@ -80,6 +80,7 @@ public class PageSteamMain {
     }
     @Step("Устанавливаем значение {value} в поиск и нажимаем enter")
     public SerchPage setValueInSearch(String value) {
+        Selenide.sleep(2_000);
         $("#store_nav_search_term").setValue(value).pressEnter();
         return new SerchPage();
     }
