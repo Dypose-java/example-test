@@ -90,7 +90,7 @@ public class Main extends MainJenkinsProperty {
     @Owner("Dypose")
     @Stories({@Story("Поиск"),@Story("Покупка")})
     @Severity(SeverityLevel.BLOCKER)
-    @Tags({@Tag("BLOCKER"),@Tag("EXAMPLE")})
+    @Tag("BLOCKER")
     @DisplayName("Проверка поиска,главной страницы и покупки игры {nameGame}")
     @Test
     void test() {

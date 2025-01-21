@@ -19,7 +19,7 @@ public class PageSteamMain {
     private final ElementsCollection popUpWindowsBanerCommunity = $$(".submenu_Community a").filter(visible);
     private final ElementsCollection banerBaseUrl = $$("#global_header .supernav_container a").filter(visible);
 
-    @Step("Open url:{URL}")
+    @Step("Open url:{url}")
     public PageSteamMain openUrl(String url) {
         Selenide.open(url);
         return this;

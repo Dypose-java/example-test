@@ -13,7 +13,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-@Tag("setUp")
 public class MainJenkinsProperty {
     @BeforeAll
     static void setUp() {
