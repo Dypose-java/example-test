@@ -11,7 +11,7 @@ import steam.pages.enums.ValuesPopUpWindowsCommunity;
 import steam.pages.enums.ValuesPopUpWindowsShop;
 import steam.set_up.MainJenkinsProperty;
 import steam.set_up.MainSelenoid;
-@Tags({@Tag("UITests"),@Tag("SelenoidTest")})
+@Tags({@Tag("UITests"),@Tag("Steam")})
 public class Main extends MainJenkinsProperty {
     final static String NAME_FILE="steam_latest.deb";
     final static String URL = "https://store.steampowered.com/";
